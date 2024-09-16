@@ -6,6 +6,7 @@ void freedoublepointer(double **p){
     for(int i=0;i<3;i++){
         free(p[i]);
     }
+    free(p);
 }
 // Export this function for ctypes in Python
 void findDirectionCosines(double *point1, double *point2, double *directionCosines) {
